@@ -1,0 +1,110 @@
+@import '../../assets/sass/Variable.scss';
+@import '../../assets/sass/mixin.scss';
+
+.Home__content {
+	margin-top: 44px;
+	padding: 0 44px 74px;
+	overflow: hidden;
+	&-layout {
+		overflow: hidden;
+		margin-top: 36px;
+		.quantity__student {
+			color: #82919b;
+			font-size: 1.4rem;
+			margin-bottom: 0;
+		}
+	}
+	&-list {
+		&-box {
+			margin-bottom: 44px;
+		}
+		&-text {
+			display: flex;
+			justify-content: space-between;
+			&__heading {
+				color: #000;
+				font-size: $fontSize-heading-h3;
+				font-weight: 700;
+				margin-right: auto;
+				margin-top: 16px;
+			}
+			&__show-more {
+				align-items: center;
+				text-decoration: none;
+				color: $color-orange;
+				user-select: none;
+				cursor: pointer;
+				padding: 8px 0 8px 8px;
+				margin-right: 4px;
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+		}
+
+		&-layout {
+			display: flex;
+			padding-left: 0;
+		}
+		&-item {
+			width: 320px;
+			list-style: none;
+			margin-right: 24px;
+			flex-shrink: 0;
+			> a {
+			}
+			&-img {
+				@include imgTab();
+			}
+			&__title {
+				> a {
+					@include titleTab();
+				}
+			}
+			&__quantity-student {
+				@include quantity();
+			}
+			&__author {
+				display: flex;
+				&__img {
+					display: flex;
+					align-items: center;
+					> img {
+						@include avatar();
+					}
+				}
+				&__name {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-decoration: none;
+					color: $color-sliver;
+					font-size: $fontSize-text-desc;
+					.postItemDot {
+						margin: 0 8px;
+					}
+					> strong {
+						color: $color-text;
+						font-weight: 600;
+					}
+				}
+			}
+			&__info {
+				display: flex;
+				> p {
+					margin: 0 24px 0 0;
+					font-size: $fontSize-text-desc;
+					color: $color-sliver;
+					> i {
+						margin-right: 6px;
+					}
+				}
+				&-view {
+				}
+				&-liek {
+				}
+				&-comments {
+				}
+			}
+		}
+	}
+}

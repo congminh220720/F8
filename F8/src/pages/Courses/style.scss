@@ -1,0 +1,36 @@
+@import '../../assets/sass/mixin.scss';
+@import '../../assets/sass/Variable.scss';
+.Study__Page {
+	padding: 16px 44px 44px;
+	&-heading {
+		font-size: $fontSize-heading-h3;
+		font-weight: 700;
+		margin-top: 20px;
+	}
+	&__courses {
+		&-layout {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-gap: 48px 26px;
+			padding-left: 0;
+		}
+		&-item {
+			list-style: none;
+			&-img {
+				@include imgTab();
+			}
+			&__title {
+				> a {
+					@include titleTab();
+				}
+			}
+			&__quantity-student {
+				color: #666;
+				font-size: $fontSize-text-desc;
+				> span {
+					margin-left: 6px;
+				}
+			}
+		}
+	}
+}

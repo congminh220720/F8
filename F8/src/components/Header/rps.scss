@@ -1,0 +1,30 @@
+@media screen and (min-width: 740px) and (max-width:1023px) {
+    .head__logo-navbar{
+        display: none;
+    }
+    .head__navbar-user-information{
+        display: none;
+    }
+    .head__menu__navbar-mobile{
+        display: block;
+     
+    }
+}
+
+@media screen and (max-width:46.1875em){
+    .head__logo-navbar{
+        display: none;
+    }
+    .head__navbar-user-information{
+        display: none;
+    }
+    .head__menu__navbar-mobile{
+        display: block;
+    }
+    .head__search-form{
+        display: none;
+    }
+    .head__navbar-user-search-mobile{
+        display: block;
+    }
+}

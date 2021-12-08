@@ -1,0 +1,67 @@
+@mixin header__layout-each-pages {
+	display: flex;
+	margin-bottom: 12px;
+	border-bottom: 1px solid #e6e6e6;
+	> div {
+		display: flex;
+		> a {
+			text-decoration: none;
+			font-weight: 500;
+			color: #666;
+			font-size: 1.4rem;
+			padding: 12px 20px;
+			position: relative;
+			cursor: pointer;
+			top: 1px;
+		}
+	}
+}
+
+@mixin avatar {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 0px;
+}
+
+@mixin btn__share__save {
+	display: inline-block;
+	height: 1em;
+	cursor: pointer;
+	padding: 0 8px 4px 8px;
+}
+
+@mixin layout-pages {
+	display: grid;
+	grid-template-columns: 66.66667% 33.33333%;
+}
+@mixin imgTab {
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 16px;
+	object-fit: cover;
+	padding-top: 56%;
+	background-position: 50%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+@mixin titleTab {
+	font-weight: 600;
+	color: #292929;
+	font-size: 1.8rem;
+	line-height: 1.8;
+	overflow: hidden;
+	word-wrap: break-word;
+	display: -webkit-box;
+	text-decoration: none;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+}
+@mixin quantity {
+	color: #666;
+	font-size: 1.5rem;
+	> span {
+		margin-left: 6px;
+	}
+}

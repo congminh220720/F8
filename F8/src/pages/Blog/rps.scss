@@ -1,0 +1,51 @@
+@media screen and (max-width:1204px) {
+    .blog{
+        display: flex;
+    }
+    .blog__propose{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width:1023px) {
+    .blog{
+        display: flex;
+        flex-direction: column;
+         &__primary{
+            border-right: none;
+            padding: 0;
+        }
+        
+        &__suggestions{
+            display: block; 
+            
+        }
+    }
+   
+}
+
+@media screen and (max-width:46.1875em){
+         .blog{
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+         &__primary{
+            border-right: none;
+            padding: 0;
+            &-item-info{
+                flex-direction: column-reverse;
+                &-img-avatar{
+                    >img{
+                        width: 100%;
+                        margin: 16px 0 16px 0;
+                    }
+                }
+            }
+        }
+        
+        &__suggestions{
+            display: block; 
+            
+        }
+    }
+}

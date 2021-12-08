@@ -1,0 +1,13 @@
+.content {
+	display: flex;
+	min-height: 100vh;
+	&__sidebar {
+		flex-shrink: 0;
+	}
+	&__pages {
+		max-width: calc(100% - 96px);
+		padding: 0 40px 0 20px;
+		flex: 1;
+	}
+}
+

@@ -1,0 +1,40 @@
+@media screen and (max-width:1204px) {
+    .code{
+        display: block;
+        &__propose{
+            display: none;
+        }
+    }
+}    
+
+@media screen and (min-width: 740px) and (max-width:1023px) {
+    .code{
+        flex-direction: column;
+        padding: 0 32px;
+        &__primary{
+            border-right: none;
+            padding: 0;
+        }
+        &__suggestions {
+            display: block;
+        }
+    }
+   
+}
+
+@media screen and (max-width:46.1875em){
+       .code{
+        flex-direction: column;
+        padding: 0 32px;
+        &__primary{
+            border-right: none;
+            padding: 0;
+        }
+        &__suggestions {
+            display: block;
+        }
+    }
+    .code__primary-item-header__infor-user > span{
+        font-size: 1.4rem;
+    }
+}

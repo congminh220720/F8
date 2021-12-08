@@ -1,0 +1,138 @@
+@import '../../../../assets/sass/Variable.scss';
+.Home__slider__show {
+	margin-top: 18px;
+}
+.slider__show {
+	position: relative;
+	&-move {
+		overflow: hidden;
+		width: 100%;
+		> button {
+			position: absolute;
+			top: 40%;
+			outline: none;
+			background-color: $color-white;
+			border-radius: 50%;
+			border: none;
+			width: 32px;
+			height: 32px;
+			color: #4b4b4b;
+			z-index: 1;
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16%);
+			> i {
+				font-size: 1.2rem;
+			}
+			cursor: pointer;
+		}
+		&-box {
+			display: flex;
+			height: 270px;
+			transition: all 0.8s;
+		}
+		&-btn-left {
+			left: -1.5%;
+		}
+		&-btn-right {
+			right: -1.5%;
+		}
+		&-btn-key {
+			display: flex;
+			margin: 6px 0 0 0;
+			> li {
+				list-style: none;
+				margin-right: 6px;
+				> button {
+					font-size: 0;
+					width: 32px;
+					height: 8px;
+					outline: none;
+					border: none;
+					background-color: $color-gray;
+					border-radius: 10px;
+				}
+				&:first-child {
+					> button {
+						background-color: $color-sliver;
+					}
+				}
+			}
+		}
+	}
+	&-item {
+		display: flex;
+		max-width: 1240px;
+		width: 100%;
+		border-radius: 20px;
+		&:first-child {
+			.slider__show__left-btn:hover {
+				> a {
+					color: #007efe;
+				}
+			}
+		}
+		&:nth-child(2) {
+			.slider__show__left-btn:hover {
+				> a {
+					color: #7612ff;
+				}
+			}
+		}
+		&:last-child {
+			.slider__show__left-btn:hover {
+				> a {
+					color: #fe215e;
+				}
+			}
+		}
+	}
+	&__left {
+		display: flex;
+		width: 640px;
+		max-width: 100%;
+		padding: 0 36px 36px;
+		&-about {
+			color: $color-white;
+		}
+		&-heading {
+			font-size: $fontSize-heading-h2;
+			line-height: 1.5;
+			font-weight: 800;
+			margin-bottom: 8px;
+		}
+		&-desc {
+			font-size: $fontSize-text-normal;
+			font-weight: 600px;
+			line-height: 1.6;
+			margin-bottom: 24px;
+			margin-top: 0;
+		}
+		&-btn {
+			width: 138px;
+			> a {
+				text-decoration: none;
+				text-align: center;
+				display: inline-block;
+				min-width: 124px;
+				padding: 6px 10px;
+				color: #fff;
+				border-radius: 16px;
+				border: 2px solid #fff;
+				font-size: 1.4rem;
+				font-weight: 700;
+			}
+			&:hover {
+				> a {
+					background-color: $color-white;
+				}
+			}
+		}
+	}
+	&__right {
+		width: 600px;
+		>a{
+			>img{
+				width: 100%;
+			}
+		}
+	}
+}
