@@ -7,6 +7,8 @@ import iconMobile from "../../assets/img/header/icon-mobile.png";
 import userIcon from "../../assets/img/header/userImg.png";
 import f8_avatar from "../../assets/img/header/f8_avatar.png";
 
+
+
 import "./style.scss";
 import "./rps.scss";
 import "../../assets/font/fontawesome-free-5.15.3-web/css/all.min.css";
@@ -76,8 +78,9 @@ function Header(props) {
             <img src={iconMobile} />
           </button>
         </div>
-
-        <Search />
+     
+          <Search />
+   
 
         <div className="head__navbar-user" ref={notificationRef}>
           <button className="head__navbar-user-search-mobile">
